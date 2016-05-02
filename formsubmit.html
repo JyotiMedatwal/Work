@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="formsubmit.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kotta+One">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+</head>
+<body>
+<div class="signUpFrm">
+	<h1>Sign Up </h1>
+	<form action="#" id="signUp">
+		<div class="detailsContainer">
+			<div class="fieldContainer">
+				<label for="usrName">User Name</label>
+				<input type="email" id="usrName" name="usrName" maxlength="56" required />
+			</div>
+			<div class="fieldContainer">
+				<label for="pwd">Password</label>
+				<input type="password" id="pwd" name="pwd" minlength="6" required />
+			</div>
+			<div class="fieldContainer">
+				<label for="cnfmPwd">Confirm Password</label>
+				<input type="password" id="cnfmPwd" name="cnfmPwd" minlength="6" required />
+			</div>
+			<div class="fieldContainer">
+				<label for="firstName">First Name</label>
+				<input type="text" id="firstName" name="firstName" maxlength="50" required />
+			</div>
+			<div class="fieldContainer">
+				<label for="lastName">Last Name</label>
+				<input type="text" id="lastName" name="lastName" maxlength="50" />
+			</div>
+			<div class="fieldContainer">
+				<label for="dob">Date of Birth</label>
+				<input type="date" id="dob" name="dob" min="1865-01-01" max="2002-12-31"/>
+			</div>
+		</div>
+		<hr>
+		<div class="btnControl">
+			<input type="button" id="submitBtn" name="submit" value="Submit" />
+			<input type="reset" id="resetBtn" name="reset" value="Clear" />
+		</div>
+	</form>
+</div>
+<script src="formsubmit.js"></script>
+</body>
+</html>
